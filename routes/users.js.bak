@@ -33,7 +33,7 @@ router.get("/",(req,res)=>{
 });
 
 router.get("/sort",(req,res)=>{
-	let sorted_users=users.sort(function(a, b) {
+	let sorted_users=user.sort(function(a, b) {
 		let d1 = getDateFromString(a.DOB);
 		let d2 = getDateFromString(b.DOB);
 			return d1-d2;
